@@ -6,12 +6,12 @@ print ("=== Seja bem-vindo ao Gerador de Senhas 3000 ===")
 print ("Aqui ajudamos você a gerar uma senha forte e segura em poucos cliques.")
 time.sleep(1)
 
-resposta = int(input("Quantos caracteres você quer sua na senha?\n"))
+resposta = int(input("Quantos caracteres você quer na sua senha?\n"))
 
 while resposta <= 7:
     print("O padrão mínimo amplamente aceito para senhas é de 8 caracteres. Poderia tentar novamente?")
     time.sleep(1)
-    resposta = int(input("Quantos caracteres você quer sua na senha?\n"))
+    resposta = int(input("Quantos caracteres você quer na sua senha?\n"))
     time.sleep(1)
 
 print(f"Certo, vou gerar uma senha de {resposta} caracteres")
@@ -19,11 +19,12 @@ time.sleep(1)
 caracteres =  string.ascii_letters + string.digits + string.punctuation
 print("Carregando...")
 time.sleep(2)
-senha = ""
-for i in range(resposta):
-    senha = senha + secrets.choice(caracteres)
 
-print(senha)
+for opcao in range(1, 4):
+    senha = ""
+    for i in range(resposta):
+        senha = senha + secrets.choice(caracteres)
+    print(f"{opcao}) {senha}")
 
 print("Senha gerada com sucesso! ✅")
 time.sleep(1)
