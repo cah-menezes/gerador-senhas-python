@@ -2,7 +2,7 @@ import string
 import secrets
 import time
 
-print ("=== Seja bem-vindo ao Gerador de Senhas 3000 ===")
+print ("=== Seja bem-vindo ao Gerador de Senhas Seguras 3000 ===")
 print ("Aqui ajudamos você a gerar uma senha forte e segura em poucos cliques.")
 time.sleep(1)
 
@@ -14,7 +14,7 @@ while resposta <= 7:
     resposta = int(input("Quantos caracteres você quer na sua senha?\n"))
     time.sleep(1)
 
-print(f"Certo, vou gerar uma senha de {resposta} caracteres")
+print(f"Certo, vou gerar 3 opções de senhas de {resposta} caracteres para você. Escolha uma:")
 time.sleep(1)
 caracteres =  string.ascii_letters + string.digits + string.punctuation
 print("Carregando...")
@@ -26,10 +26,12 @@ for opcao in range(1, 4):
         senha = senha + secrets.choice(caracteres)
     print(f"{opcao}) {senha}")
 
-print("Senha gerada com sucesso! ✅")
+# Ideia v2: perguntar se gostou das senhas e gerar de novo se não
+
+print("Opções geradas com sucesso. ✅")
 time.sleep(1)
-print("Guarde em um gerenciador de senhas e nunca compartilhe com ninguém.")
+print("Copie e salve em um gerenciador de senhas. Nunca compartilhe com ninguém.")
 time.sleep(1)
-print("Obrigada por usar o Gerador de Senhas 3000. Até a próxima!")
+print("Obrigada por usar o Gerador de Senhas Seguras 3000. Até a próxima!")
 
 
