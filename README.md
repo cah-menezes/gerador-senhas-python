@@ -21,7 +21,7 @@ Um script em Python que gera opções de senhas fortes e aleatórias, com valida
 2. Clone este repositório:
 
 ```bash
-git clone https://github.com/cahponto/gerador-senhas-python.git
+git clone https://github.com/cah-menezes/gerador-senhas-python.git
 ```
 
 3. Acesse a pasta do projeto:
