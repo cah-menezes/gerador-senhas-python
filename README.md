@@ -1,41 +1,21 @@
-# 🔐 Gerador de Senhas Seguras 3000
+# 🔑 Gerador de Senhas Seguras 3000
 
-Um script em Python que gera opções de senhas fortes e aleatórias, com validação de tamanho mínimo e uso de biblioteca criptograficamente segura.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
-## 🚀 Funcionalidades
+Script em Python que gera senhas fortes e aleatórias com controle de comprimento mínimo e composição segura de caracteres.
 
-* **Validação de Entrada:** Não aceita senhas com menos de 8 caracteres, pedindo um novo valor até que o tamanho seja válido (loop `while`).
-* **Sorteio Seguro:** Usa o módulo `secrets`, próprio para dados sensíveis como senhas, em vez do `random`, que é previsível e não recomendado para segurança.
-* **Composição Forte:** Combina letras maiúsculas, minúsculas, números e símbolos usando o módulo `string`.
-* **3 Opções de Senha:** Gera três senhas diferentes para o usuário escolher, usando loops aninhados (`for` dentro de `for`).
-* **Experiência de Uso:** Mensagens com pausas usando o módulo `time`, simulando carregamento.
+---
 
-## 🛠️ Tecnologias Utilizadas
+## ⚙️ Funcionalidades
 
-* Python 3 (`secrets`, `string`, `time`)
-* Git & GitHub
+- Valida o comprimento mínimo da senha (8 caracteres)
+- Gera três opções de senha usando o módulo `secrets`
+- Combina letras, números e símbolos para maior segurança
 
-## 🏁 Como Executar o Projeto
-
-1. Certifique-se de ter o Python 3 instalado.
-2. Clone este repositório:
+## 🚀 Como executar
 
 ```bash
 git clone https://github.com/cah-menezes/gerador-senhas-python.git
-```
-
-3. Acesse a pasta do projeto:
-
-```bash
 cd gerador-senhas-python
+python3 gerador.py
 ```
-
-4. Execute o gerador:
-
-```bash
-python gerador.py
-```
-
-## 🗺️ Próximos Passos
-
-* Perguntar se o usuário gostou das opções e gerar novas caso não tenha gostado.
